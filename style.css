@@ -107,10 +107,6 @@ a {
     font-weight: 500;
 }
 
-.button:hover {
-    border-style: solid;
-}
-
 .features {
     background-color: #f9faf8;
     display: flex;
@@ -238,10 +234,15 @@ a {
     font-size: 16px
 }
 
-.button-b:hover {
-    background-color:#e5e7eb;
-    color: #1F2937;
-    border-style: solid;
-    border-color: #1F2937;
-    
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+footer p {
+    color:#e5e7eb;
+    font-size: 12px;
+    padding: 12px;
 }
