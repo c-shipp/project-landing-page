@@ -98,7 +98,7 @@ a {
     color: #e5e7eb;
 }
 
-button {
+.button {
     background-color: #3882F6;
     color:#e5e7eb;
     border-radius: 8px;
@@ -107,10 +107,12 @@ button {
     font-weight: 500;
 }
 
+.button:hover {
+    border-style: solid;
+}
+
 .features {
     background-color: #f9faf8;
-    padding-left: 10%;
-    padding-right: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -120,29 +122,42 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 48px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .features-items {
     display: flex;
-    justify-content: space-between;
-    gap: 32px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 48px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 48px;
 }
 
 .features-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 12px
+    gap: 2px;
 }
 
 .image-container {
     display: flex;
+    flex-direction: row;
     border-style: solid;
     border-width: 8px;
     border-radius: 8px;
     border-color:#3882F6;
-    width: 200px;
-    height: 200px;
+    height: 150px;
+    width: auto;
+}
+
+.features-container p {
+    font-size: 11px;
 }
 
 #image-1,
@@ -152,4 +167,81 @@ button {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.features-container p {
+    flex-wrap: nowrap;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 96px 20% 96px 20%;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote-author p {
+    text-align: end;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.cta-section {
+    background-color: #f9faf8
+    
+}
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 48px 64px;
+    margin: 64px 20%;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    color: #e5e7eb
+}
+
+#cta-time {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+#cta-sign-up {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.button-b {
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    border-color:#e5e7eb;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 8px 36px;
+    font-size: 16px
+}
+
+.button-b:hover {
+    background-color:#e5e7eb;
+    color: #1F2937;
+    border-style: solid;
+    border-color: #1F2937;
+    
 }
